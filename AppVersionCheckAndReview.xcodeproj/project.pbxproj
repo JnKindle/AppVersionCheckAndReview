@@ -15,6 +15,7 @@
 		D7525AA21D65952B00A20E8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7525AA01D65952B00A20E8D /* LaunchScreen.storyboard */; };
 		D7525AAD1D65952B00A20E8D /* AppVersionCheckAndReviewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7525AAC1D65952B00A20E8D /* AppVersionCheckAndReviewTests.m */; };
 		D7525AB81D65952B00A20E8D /* AppVersionCheckAndReviewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7525AB71D65952B00A20E8D /* AppVersionCheckAndReviewUITests.m */; };
+		D7525AC81D6595A600A20E8D /* CommonTools.m in Sources */ = {isa = PBXBuildFile; fileRef = D7525AC71D6595A600A20E8D /* CommonTools.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		D7525AB31D65952B00A20E8D /* AppVersionCheckAndReviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppVersionCheckAndReviewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7525AB71D65952B00A20E8D /* AppVersionCheckAndReviewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppVersionCheckAndReviewUITests.m; sourceTree = "<group>"; };
 		D7525AB91D65952B00A20E8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7525AC61D6595A600A20E8D /* CommonTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonTools.h; sourceTree = "<group>"; };
+		D7525AC71D6595A600A20E8D /* CommonTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonTools.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		D7525A911D65952B00A20E8D /* AppVersionCheckAndReview */ = {
 			isa = PBXGroup;
 			children = (
+				D7525AC51D6595A600A20E8D /* Common */,
 				D7525A951D65952B00A20E8D /* AppDelegate.h */,
 				D7525A961D65952B00A20E8D /* AppDelegate.m */,
 				D7525A981D65952B00A20E8D /* ViewController.h */,
@@ -138,6 +142,15 @@
 				D7525AB91D65952B00A20E8D /* Info.plist */,
 			);
 			path = AppVersionCheckAndReviewUITests;
+			sourceTree = "<group>";
+		};
+		D7525AC51D6595A600A20E8D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D7525AC61D6595A600A20E8D /* CommonTools.h */,
+				D7525AC71D6595A600A20E8D /* CommonTools.m */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +285,7 @@
 			files = (
 				D7525A9A1D65952B00A20E8D /* ViewController.m in Sources */,
 				D7525A971D65952B00A20E8D /* AppDelegate.m in Sources */,
+				D7525AC81D6595A600A20E8D /* CommonTools.m in Sources */,
 				D7525A941D65952B00A20E8D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,6 +512,7 @@
 				D7525ABE1D65952B00A20E8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D7525ABF1D65952B00A20E8D /* Build configuration list for PBXNativeTarget "AppVersionCheckAndReviewTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +521,7 @@
 				D7525AC11D65952B00A20E8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D7525AC21D65952B00A20E8D /* Build configuration list for PBXNativeTarget "AppVersionCheckAndReviewUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +530,7 @@
 				D7525AC41D65952B00A20E8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

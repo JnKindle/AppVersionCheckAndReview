@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#import "CommonTools.h"
+
 @interface AppDelegate ()
 
 @end
@@ -16,8 +18,22 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [self checkVersion];
     return YES;
+}
+
+-(void)checkVersion{
+    
+    //这个需要真机环境下才能跳转
+    //1116048160 药监
+    //1129183951 社保宝
+    
+    //版本更新
+    [[CommonTools shareInstance] versionForAppid:@"1116048160" Block:^(BOOL isNewVersion, NSString *updateUrl, NSString *updateContent) {
+        
+    }];
+    //评论
+    //[[CommonTools shareInstance] reviewAppForAppid:@"1116048160"];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
